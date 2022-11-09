@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    /*
+    Main red: Forte
+    Main white: Brush Script MT
+
+    1st media query break @950px width
+    */
+}
+body{
+    height: 3000px;
+    max-width: 100%;
+}
+
+/* Navigation */
+
+nav{
+    background-color: white;
+    height: 10vh;
+    min-height: 100px;
+    width: 100%;
+    font-size: 20px;
+}
+.topbar{
+    position: relative;
+    height: 100px;
+}
+.Image{
+    position: absolute;
+    height: 10vh;
+    min-height: 100px;
+    min-width: 150px;
+    width: 10vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+ul{
+    
+}
+a{
+    color: gray;
+    text-decoration: none;
+}
+.topnav{
+    margin-top: 35px;
+    margin-right: 50px;
+}
+.booknow{
+    margin-top: 20px;
+    /* border-radius: 10px; */
+    padding: 15px 15px 10px 15px;
+    background-color: red;
+    border: 2px gray solid;
+    font-weight: 600;
+}
+.booknow > a{
+    color: white;
+}
+li{
+    float: right;
+    display: inline;
+    list-style: none;
+    margin-right: 30px;
+}
+.phone_number{
+    float: left;
+    color: black;
+}
+.bottombar{
+    display: flex;
+    justify-content:space-between;
+    height: 20px;
+    padding-left: 0px;
+    text-align: center;
+    height: 40px;
+}
+
+.bottomnav{
+    width: 100%;
+    padding:5px 0px;
+    margin-right: 0px;
+    border-right: 1px rgba(220, 220, 220, 0.699) solid;  
+}
+.bottomnav:hover{
+    background-color: lightgray;
+    
+}
+.bottomnav:hover > a{
+    color: white;
+}
+.nav2{
+    border-top: 1px rgba(220, 220, 220, 0.399) solid;
+    border-bottom: 1px rgba(220, 220, 220, 0.399) solid;
+    min-height: 40px;
+    max-height: 40px;
+    background-color: rgba(211, 211, 211, 0.16);
+}
+.bottomnav > a {
+    padding: 0px 25%;
+}
+
+/* End Navigation */
+
+/* About */
+.hero_section{
+    background-color: white;
+    height: 600px;
+    position: relative;
+}
+.hero_header{
+    position: absolute;
+    top:45%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    width: 30vw;
+}
+.hero_header > h1 {
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.hero_image{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(110%,-50%);
+    width: 45vw;
+    
+}
+.hero_header > .product_button {
+    margin-top: 20px;
+    /* border-radius: 10px; */
+    padding: 15px 15px 10px 15px;
+    background-color: red;
+    border: 2px gray solid;
+    color: white;
+    font-weight: 600;
+}
+.break{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.162);
+}
+.card_section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 125px;
+}
+.card_title{
+    margin: 75px 0px;
+    text-align: center;
+}
+.card{
+    
+    /* box-shadow: 0px 0px 20px 10px #00000016; */
+    min-height: 300px;
+    min-width: 300px;
+    max-height: 300px;
+    max-width: 300px;
+    position: relative;
+}
+.card > img{
+    max-width: 300px;
+    max-height: 300px;
+    position: absolute;
+    margin: 0;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card_container{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 300px;
+}
+.card_text{
+    position: absolute;
+    margin: 0;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-self: flex-end;
+    /* background-color: rgba(211, 211, 211, 0.319); */
+    /* box-shadow: 0px 0px 20px 10px #00000016; */
+}
